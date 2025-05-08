@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background-color: #f25c05;
+  color: white;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* GALERÍA */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: filter 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeria img:hover {
+  filter: brightness(110%);
+}
+
+/* CRÉDITO */
+.credito {
+  font-size: 0.9rem;
+  margin: 10px auto 30px auto;
+  color: #666;
+  font-style: italic;
+}
+
+/* BOTÓN */
+.boton-container {
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #f25c05;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d44e00;
+}
+
+/* MEDIA QUERIES */
+
+/* Pequeño < 480px */
+@media (max-width: 479px) {
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mediano < 900px */
+@media (min-width: 480px) and (max-width: 899px) {
+  .galeria {
+    justify-content: space-around;
+  }
+
+  .galeria img {
+    max-width: 45%;
+  }
+}
+
+/* Grande < 1200px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .galeria img {
+    max-width: 30%;
+  }
+}
+
+/* Extra > 1200px */
+@media (min-width: 1200px) {
+  .galeria img {
+    max-width: 30%;
+  }
+}
+body {
+  background: linear-gradient(to bottom, #f25c05 0%, #f25c05 50%, white 50%, white 100%);
+  min-height: 100vh;
+}
+
+
+
+  
